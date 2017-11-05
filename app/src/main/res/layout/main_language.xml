@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/main_language"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_alignStart="@+id/linearLayout2"
+            android:id="@+id/linearLayout3"
+            android:paddingLeft="50dp"
+            android:layout_marginTop="180dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="#b3cdd4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text2"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="#b3cdd4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text3"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="#b3cdd4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linearLayout"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/korea"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:background="@android:color/transparent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/korea"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:id="@+id/english"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:background="@android:color/transparent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/english"
+                android:layout_above="@+id/linearLayout1"
+                android:layout_alignParentEnd="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="80dp"
+            android:id="@+id/linearLayout2"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|bottom">
+
+            <ImageButton
+                android:id="@+id/japan"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:background="@android:color/transparent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/japan" />
+
+            <ImageButton
+                android:id="@+id/china"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:background="@android:color/transparent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/china" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

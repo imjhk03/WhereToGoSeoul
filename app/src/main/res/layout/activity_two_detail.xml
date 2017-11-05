@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/two_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="TITLE"
+            android:textSize="9pt"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/two_image_firstimage"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/no_image" />
+
+            <TextView
+                android:id="@+id/detail_common"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="기본정보"
+                android:textColor="#b3cdd4"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/two_text_zipcode"
+                android:text="zipcode"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/two_text_addr1"
+                android:text="addr"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/two_text_tel"
+                android:text="tel"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="7pt" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:id="@+id/overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="개요"
+                android:textColor="#b3cdd4"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/two_text_overview"
+                android:text="overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textSize="7pt" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:id="@+id/operation_guide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="이용안내"
+                android:textColor="#b3cdd4"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/two_text_infocenterfood"
+                    android:text="infocenterfood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:id="@+id/two_text_firstmenu"
+                    android:text="firstmenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:id="@+id/two_text_opentimefood"
+                    android:text="opentimefood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:id="@+id/two_text_packing"
+                    android:text="packing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:id="@+id/two_text_parkingfood"
+                    android:text="parkingfood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:id="@+id/two_text_reservationfood"
+                    android:text="reservationfood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:id="@+id/two_text_restdatefood"
+                    android:text="restdatefood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:id="@+id/two_text_seat"
+                    android:text="seat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:id="@+id/two_text_smoking"
+                    android:text="smoking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:id="@+id/two_text_treatmenu"
+                    android:text="smoking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="7pt" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/two_detail_mapbutton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_row="5"
+        android:textSize="9pt"
+        android:background="@color/a1"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="지도 보기" />
+</LinearLayout>

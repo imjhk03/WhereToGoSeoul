@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.group2.soft.induk">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:windowSoftInputMode="stateAlwaysHidden"
+        android:theme="@style/Theme.AppCompat">
+
+        <activity
+            android:name=".activity.LoadingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.SetKorActivity" />
+        <activity android:name=".activity.SetEngActivity" />
+        <activity android:name=".activity.SetChnActivity" />
+        <activity android:name=".activity.SetJpnActivity" />
+        <activity android:name=".ShowMap" />
+        <activity android:name=".ShowMapOne" />
+        <activity android:name=".activity.DetailOneActivity" />
+        <activity android:name=".activity.DetailOneActivity_ENG" />
+        <activity android:name=".activity.DetailOneActivity_CHN" />
+        <activity android:name=".activity.DetailOneActivity_JPN" />
+        <activity android:name=".activity.DetailTwoActivity" />
+        <activity android:name=".activity.DetailTwoActivity_ENG" />
+        <activity android:name=".activity.DetailTwoActivity_CHN" />
+        <activity android:name=".activity.DetailTwoActivity_JPN" />
+        <activity android:name=".activity.DetailThreeActivity" />
+        <activity android:name=".activity.DetailThreeActivity_ENG" />
+        <activity android:name=".activity.DetailThreeActivity_CHN" />
+        <activity android:name=".activity.DetailThreeActivity_JPN" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
